@@ -1,0 +1,295 @@
+@font-face
+{
+    font-family: "retroFonts";
+    src: url(./risk-of-rain/riskofrainfont.ttf) format("truetype");
+}
+@font-face
+{
+    font-family: "retroHeader";
+    src: url(./KlaxonsBetterE.otf) format("opentype")
+}
+
+html,body
+{
+    min-height: 100vh;
+}
+
+body
+{
+    background-color: #000B17;
+    font-family: "retroFonts";
+    display:flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color: inherit; 
+     text-decoration:none; 
+     cursor:pointer;
+}
+
+.basicDiv
+{
+    border:solid 2px;
+    font-family: "retroFonts";
+    padding:1rem;
+    width:100%;
+}
+
+.portDiv
+{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 2rem;
+}
+
+.color0
+{
+    border-color: #00345c;
+    color: #00345c;
+}
+
+.color1
+{
+    border-color: #9BA1F9;
+    color: #9BA1F9;
+}
+
+.color2
+{
+    border-color: #7FFFEB;
+    color: #7FFFEB;
+}
+
+.color3
+{
+    border-color: #FF4A18;
+    color: #FF4A18;
+}
+
+.menu
+{
+    float:right;
+    margin-top:37px;
+    font-size:18px;
+}
+
+#bigHeader
+{
+    border-bottom: 2px solid #9BA1F9;
+    overflow: auto;
+}
+
+.smallHeader
+{
+    width : 80%;
+    margin: auto;
+}
+
+h1
+{
+    display:inline-block;
+    margin-top: 15px;
+    font-family:"retroHeader";
+    font-size:60px;
+}
+
+@media screen and (max-width:828px)
+{
+    h1 {
+        display:block;
+        text-align:center;
+        margin:auto;
+    }
+    .menu
+    {
+        margin-top:0px;
+    }
+}
+
+@media screen and (max-width:510px)
+{
+    h1 {
+        font-size : 11.5vw;
+    }
+    .menu
+    {
+        font-size : 3.5vw;
+    }
+}
+
+.menu-item
+{
+    display:inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main
+{
+    flex : 1 0 auto;
+
+}
+
+.aboutRow
+{
+    margin-top:1rem;
+}
+
+.aboutMe
+{
+    color: #7FFFEB;
+    border-color: #9BA1F9;
+}
+
+.footer
+{
+    flex-shrink: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.myFace
+{
+    border: 2px solid #7FFFEB;
+    font-family: "retroFonts";
+    padding-top: 1rem;
+}
+
+@media screen and (max-width:575px)
+{
+    .myFace
+    {
+        /* width: 93%; */
+    }
+    .aboutMe
+    {
+        /* width: 93%; */
+        margin-top:1rem;
+    }
+}
+
+h2
+{
+    color: #7FFFEB;
+    padding: 20px 0px;
+    text-align: center;
+    border-bottom: 2px solid #9BA1F9;
+}
+
+.portRow
+{
+    padding: 0px 30px;
+    padding-top: 30px;
+}
+
+.portCol
+{
+    min-width: 230px;
+    padding-bottom: 30px;
+
+}
+
+.portItem
+{
+    width:260px;
+    height: 260px;
+    display:inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(https://via.placeholder.com/260);
+    background-size: 100%;
+}
+
+.portItemText
+{
+    position:absolute;
+    bottom:10px;
+    left:0px;
+    width:100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #7FFFEB;
+    font-size: 1.5rem;
+}
+
+#youtubeItem
+{
+    background-image: url(./YoutubeMesh.png);
+}
+
+#twitchItem
+{
+    background-image: url(./TwitchMesh.png);
+}
+
+@media screen and (max-width: 768px)
+{
+    h2
+    {
+        font-size: 2.3rem;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 375px)
+{
+    .portItem
+    {
+        width:68vw;
+        height:68vw;
+    }
+}
+
+.contactDiv
+{
+    margin-top: 30px;
+    border: 2px solid #9BA1F9;
+}
+
+.inputField
+{
+    width:100%;
+    border: 2px solid #9BA1F9;
+    color:#7FFFEB;
+    background: transparent;
+    padding: 5px 10px;
+    height:8rem;
+    resize: none;
+}
+
+.stylishButton
+{
+    background-color: transparent;
+    border: 2px solid #7FFFEB;
+    color: #FF4A18;
+    border-radius: 0px;
+    height: 4rem;
+}
+
+.buttonArea
+{
+    padding:20px 0px;
+    text-align: center;
+}
+
+#particleParent
+{
+    position: relative;
+}
+
+.particleSquare
+{
+    position: absolute;
+    border: 1px solid;
+    z-index: -1;
+}
